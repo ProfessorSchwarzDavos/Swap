@@ -8,26 +8,26 @@
     <script>
       /* Pool pages (testnet) run without the site analytics tracker. */
       (function () { try {
-        var p = location.pathname.slice('/'.length - 1), k = 'darkswap.poolAnalyticsOff';
+        var p = location.pathname.slice('/'.length - 1), k = 'ghostswap.poolAnalyticsOff';
         if (p === '/pool' || p.indexOf('/pool/') === 0) { localStorage.setItem('umami.disabled', '1'); localStorage.setItem(k, '1'); }
         else if (localStorage.getItem(k)) { localStorage.removeItem('umami.disabled'); localStorage.removeItem(k); }
       } catch (e) {} })();
     </script>
-    <title>NEAR pool discovery | DarkSwap</title>
+    <title>NEAR pool discovery | Ghost Swap</title>
     <meta name="description" content="Discover NEAR liquidity pools and inspect public market data. Listings are not verified tokens, a safety assessment or an executable route." />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://darkswap.app/near-discovery" />
-    <meta property="og:site_name" content="DarkSwap" />
+    <link rel="canonical" href="https://ghostswap.app/near-discovery" />
+    <meta property="og:site_name" content="Ghost Swap" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="NEAR pool discovery | DarkSwap" />
+    <meta property="og:title" content="NEAR pool discovery | Ghost Swap" />
     <meta property="og:description" content="Discover NEAR liquidity pools and inspect public market data. Listings are not verified tokens, a safety assessment or an executable route." />
-    <meta property="og:url" content="https://darkswap.app/near-discovery" />
-    <meta property="og:image" content="https://darkswap.app/brand/social-share-private-swaps.jpg" />
-    <meta property="og:image:alt" content="DarkSwap Private Swaps banner" />
+    <meta property="og:url" content="https://ghostswap.app/near-discovery" />
+    <meta property="og:image" content="https://ghostswap.app/brand/social-share-private-swaps.jpg" />
+    <meta property="og:image:alt" content="Ghost Swap Private Swaps banner" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="NEAR pool discovery | DarkSwap" />
+    <meta name="twitter:title" content="NEAR pool discovery | Ghost Swap" />
     <meta name="twitter:description" content="Discover NEAR liquidity pools and inspect public market data. Listings are not verified tokens, a safety assessment or an executable route." />
-    <meta name="twitter:image" content="https://darkswap.app/brand/social-share-private-swaps.jpg" />
+    <meta name="twitter:image" content="https://ghostswap.app/brand/social-share-private-swaps.jpg" />
     <style>#seo-static{min-height:100vh;box-sizing:border-box;background:#17111f;color:#f5eefb;font:18px/1.6 system-ui,sans-serif;padding:3rem max(24px,calc((100vw - 1050px)/2))}#seo-static a{color:#d9b5ff}#seo-static nav{display:flex;flex-wrap:wrap;gap:1rem}#seo-static h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.1;max-width:800px;margin:3rem 0 1.5rem}#seo-static p{max-width:760px;overflow-wrap:anywhere}</style>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=3" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=3" />
@@ -36,7 +36,7 @@
     <link rel="stylesheet" crossorigin href="/assets/index-CtoBo6pe.css">
   </head>
   <body>
-    <div id="root"><div id="seo-static"><header><a href="/">DarkSwap</a><nav aria-label="Main navigation"><a href="/">Home</a><a href="/swap">Swap</a><a href="https://rewards.darkswap.app">Rewards</a><a href="/docs">Docs</a></nav></header><main><h1>Find the pool, not hype.</h1><p>Explore public NEAR pool data for research, not a live swap quote. Listings do not verify a token or guarantee a route.</p><section aria-labelledby="public-pool-snapshot"><h2 id="public-pool-snapshot">Public NEAR pool snapshot</h2><p>Read-only research. Listings are not verified tokens, a safety assessment, investment advice or executable quotes. Trending means activity, not quality or safety. Verify token and pool addresses. Search and filters remain interactive; this bounded snapshot is not the full catalog.</p><section><h3>Trending pools</h3><p>Source: GeckoTerminal · Updated <time datetime="2026-10-08T15:42:24.671Z">2026-10-08T15:42:24.671Z</time> · Recent public snapshot. Showing at most 12 pools.</p>
+    <div id="root"><div id="seo-static"><header><a href="/">Ghost Swap</a><nav aria-label="Main navigation"><a href="/">Home</a><a href="/swap">Swap</a><a href="https://rewards.ghostswap.app">Rewards</a><a href="/docs">Docs</a></nav></header><main><h1>Find the pool, not hype.</h1><p>Explore public NEAR pool data for research, not a live swap quote. Listings do not verify a token or guarantee a route.</p><section aria-labelledby="public-pool-snapshot"><h2 id="public-pool-snapshot">Public NEAR pool snapshot</h2><p>Read-only research. Listings are not verified tokens, a safety assessment, investment advice or executable quotes. Trending means activity, not quality or safety. Verify token and pool addresses. Search and filters remain interactive; this bounded snapshot is not the full catalog.</p><section><h3>Trending pools</h3><p>Source: GeckoTerminal · Updated <time datetime="2026-10-08T15:42:24.671Z">2026-10-08T15:42:24.671Z</time> · Recent public snapshot. Showing at most 12 pools.</p>
         <ul><li><article><h4>QTC — Quantus</h4>
           <p>DEX: Near Intents · Pool address: nep141:17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1___nep141:qtc.omft.near · Token address: qtc.omft.near</p>
           <dl><dt>Token price (USD)</dt><dd>$169.8</dd><dt>24h volume (USD)</dt><dd>$27,100,800</dd><dt>Liquidity (USD)</dt><dd>$30,696,000</dd><dt>24h price change</dt><dd>66.744%</dd><dt>24h buys / sells</dt><dd>4692 / 2277</dd></dl>

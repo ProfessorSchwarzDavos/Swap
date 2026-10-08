@@ -8,26 +8,26 @@
     <script>
       /* Pool pages (testnet) run without the site analytics tracker. */
       (function () { try {
-        var p = location.pathname.slice('/'.length - 1), k = 'darkswap.poolAnalyticsOff';
+        var p = location.pathname.slice('/'.length - 1), k = 'ghostswap.poolAnalyticsOff';
         if (p === '/pool' || p.indexOf('/pool/') === 0) { localStorage.setItem('umami.disabled', '1'); localStorage.setItem(k, '1'); }
         else if (localStorage.getItem(k)) { localStorage.removeItem('umami.disabled'); localStorage.removeItem(k); }
       } catch (e) {} })();
     </script>
-    <title>Privacy swap on NEAR Intents: confidential routing from Solana | DarkSwap</title>
+    <title>Privacy swap on NEAR Intents: confidential routing from Solana | Ghost Swap</title>
     <meta name="description" content="Review a Solana-origin route built on NEAR Intents with basic confidential processing, check fees and destination details, then choose whether to fund a manual deposit from your wallet." />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://darkswap.app/near-swap" />
-    <meta property="og:site_name" content="DarkSwap" />
+    <link rel="canonical" href="https://ghostswap.app/near-swap" />
+    <meta property="og:site_name" content="Ghost Swap" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Privacy swap on NEAR Intents: confidential routing from Solana | DarkSwap" />
+    <meta property="og:title" content="Privacy swap on NEAR Intents: confidential routing from Solana | Ghost Swap" />
     <meta property="og:description" content="Review a Solana-origin route built on NEAR Intents with basic confidential processing, check fees and destination details, then choose whether to fund a manual deposit from your wallet." />
-    <meta property="og:url" content="https://darkswap.app/near-swap" />
-    <meta property="og:image" content="https://darkswap.app/brand/social-share-private-swaps.jpg" />
-    <meta property="og:image:alt" content="DarkSwap Private Swaps banner" />
+    <meta property="og:url" content="https://ghostswap.app/near-swap" />
+    <meta property="og:image" content="https://ghostswap.app/brand/social-share-private-swaps.jpg" />
+    <meta property="og:image:alt" content="Ghost Swap Private Swaps banner" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Privacy swap on NEAR Intents: confidential routing from Solana | DarkSwap" />
+    <meta name="twitter:title" content="Privacy swap on NEAR Intents: confidential routing from Solana | Ghost Swap" />
     <meta name="twitter:description" content="Review a Solana-origin route built on NEAR Intents with basic confidential processing, check fees and destination details, then choose whether to fund a manual deposit from your wallet." />
-    <meta name="twitter:image" content="https://darkswap.app/brand/social-share-private-swaps.jpg" />
+    <meta name="twitter:image" content="https://ghostswap.app/brand/social-share-private-swaps.jpg" />
     <style>#seo-static{min-height:100vh;box-sizing:border-box;background:#17111f;color:#f5eefb;font:18px/1.6 system-ui,sans-serif;padding:3rem max(24px,calc((100vw - 1050px)/2))}#seo-static a{color:#d9b5ff}#seo-static nav{display:flex;flex-wrap:wrap;gap:1rem}#seo-static h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.1;max-width:800px;margin:3rem 0 1.5rem}#seo-static p{max-width:760px;overflow-wrap:anywhere}</style>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=3" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=3" />
@@ -36,6 +36,6 @@
     <link rel="stylesheet" crossorigin href="/assets/index-CtoBo6pe.css">
   </head>
   <body>
-    <div id="root"><div id="seo-static"><header><a href="/">DarkSwap</a><nav aria-label="Main navigation"><a href="/">Home</a><a href="/swap">Swap</a><a href="https://rewards.darkswap.app">Rewards</a><a href="/docs">Docs</a></nav></header><main><h1>Review the route. Then decide.</h1><p>Request a Solana-origin route with basic confidential processing through the NEAR Intents 1Click API, inspect its terms, and decide whether to fund it yourself. Confidential routing is not ZK shielding.</p><p>Check the receiving address, Solana refund address, destination network, minimum amount and deadline against the live quote before you send. Public deposits and destination activity may still be associated; privacy is not anonymity.</p></main><footer><a href="/docs">Read the guide</a> · <a href="/help">Get help</a></footer></div></div>
+    <div id="root"><div id="seo-static"><header><a href="/">Ghost Swap</a><nav aria-label="Main navigation"><a href="/">Home</a><a href="/swap">Swap</a><a href="https://rewards.ghostswap.app">Rewards</a><a href="/docs">Docs</a></nav></header><main><h1>Review the route. Then decide.</h1><p>Request a Solana-origin route with basic confidential processing through the NEAR Intents 1Click API, inspect its terms, and decide whether to fund it yourself. Confidential routing is not ZK shielding.</p><p>Check the receiving address, Solana refund address, destination network, minimum amount and deadline against the live quote before you send. Public deposits and destination activity may still be associated; privacy is not anonymity.</p></main><footer><a href="/docs">Read the guide</a> · <a href="/help">Get help</a></footer></div></div>
   <script src="https://i.replit.com/script.js" async="" data-website-id="a7ce3d21-13dd-4347-aefa-448902ca6619"></script></body>
 </html>

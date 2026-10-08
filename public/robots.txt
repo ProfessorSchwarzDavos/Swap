@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-# Product summary: https://darkswap.app/llms.txt
-Sitemap: https://darkswap.app/sitemap.xml
-Sitemap: https://darkswap.app/launch/sitemap.xml
+# Product summary: https://ghostswap.app/llms.txt
+Sitemap: https://ghostswap.app/sitemap.xml
+Sitemap: https://ghostswap.app/launch/sitemap.xml

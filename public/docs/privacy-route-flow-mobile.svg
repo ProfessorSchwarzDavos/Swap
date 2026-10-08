@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="620" height="1250" viewBox="0 0 620 1250" role="img" aria-labelledby="title description">
-  <title id="title">DarkSwap privacy route: wallet to Privacy Routers to receiving wallet</title>
+  <title id="title">Ghost Swap privacy route: wallet to Privacy Routers to receiving wallet</title>
   <desc id="description">Review a quote and create an order before manually depositing from your Solana wallet. Privacy Routers execute the selected route. Successful settlement delivers the quoted asset to the receiving wallet. Track your order. Deposits are public and privacy is not guaranteed.</desc>
   <rect width="620" height="1250" rx="24" fill="#151020"/>
   <g font-family="DejaVu Sans, sans-serif">
     <rect x="40" y="41" width="7" height="21" rx="3" fill="#bd8bfa"/>
-    <text x="61" y="60" fill="#d0b1fb" font-size="18" font-weight="700" letter-spacing="1">DARKSWAP / ROUTE GUIDE</text>
+    <text x="61" y="60" fill="#d0b1fb" font-size="18" font-weight="700" letter-spacing="1">GHOST SWAP / ROUTE GUIDE</text>
     <text x="40" y="113" fill="#faf5ff" font-size="35" font-weight="700">Review. Deposit. Track.</text>
     <rect x="40" y="145" width="540" height="104" rx="12" fill="#241933" stroke="#5f457a"/>
     <g fill="#e4d7f3" font-size="21">
