@@ -1,0 +1,515 @@
+# Clone report: darkswap.app
+
+Captured 10/8/2026, 11:55:13 AM (US Eastern) from https://darkswap.app/
+
+| What | Count |
+| --- | --- |
+| Pages visited | 21 |
+| Hash views opened | 33 |
+| Static files saved | 472 (13.8 MB) |
+| API responses saved | 8 |
+| Write calls seen (POST etc.) | 0 |
+| Failed or missing | 346 |
+
+## Pages
+- https://darkswap.app/
+- https://darkswap.app/swap
+- https://darkswap.app/near-swap
+- https://darkswap.app/near-trends
+- https://darkswap.app/near-discovery
+- https://darkswap.app/docs
+- https://darkswap.app/docs/confidential-routing
+- https://darkswap.app/docs/whitepaper
+- https://darkswap.app/docs/dark-pool
+- https://darkswap.app/pool
+- https://darkswap.app/pool/what-stays-public
+- https://darkswap.app/rewards
+- https://darkswap.app/help
+- https://darkswap.app/founder
+- https://darkswap.app/near-order
+- https://darkswap.app/llms.txt
+- https://darkswap.app/docs/whitepaper?print
+- https://darkswap.app/terminal-preview
+- https://darkswap.app/screener-beta
+- https://darkswap.app/split-mixer-preview
+- https://darkswap.app/privacy-bundle-preview
+
+## API responses saved (replayed by server.js)
+- GET /api/rewards/config (HTTP 200)
+- GET /api/liquidity/zec-dark (HTTP 200)
+- GET /api/swap/near/service-status?fromChain=sol (HTTP 200)
+- GET /api/near/trends?view=trending (HTTP 200)
+- GET /api/near/trends?view=new (HTTP 200)
+- GET /api/pool/chains (HTTP 200)
+- GET /docs/whitepaper?print (HTTP 200)
+- GET /api/swap/chains (HTTP 200)
+
+## API paths built at runtime (need a real backend to work)
+- /api/near/trends?${n}
+- /api/near/pools/search?${n}
+- /api/swap/tokens?${n}
+- /api/swap/quotes?${n}
+- /api/swap/orders/${e}
+- /api/swap/near/service-status?${n}
+- /api/swap/near/tokens?${n}
+- /api/rewards/me?${n}
+- /api/swap/near/orders/${e}
+- /api/swap/near/status?${n}
+- /api/v1/apps/${t}/cross-app/details
+- /api/v1/token_price?chainId=${t.id}&tokenSymbol=${t.nativeCurrency.symbol}
+- /api/v1/spl_token_info?mint_address=${t}&cluster=${n}
+- /api/v1/apps/${t}/cross-app/connections
+- /api/support/requests/status?token=${encodeURIComponent(s)}
+
+## API paths referenced in code but not captured
+- /api/support/requests
+- /api/near/pools/search
+- /api/marketing/subscriptions
+- /api/swap/tokens
+- /api/swap/quotes
+- /api/swap/orders
+- /api/swap/near/tokens
+- /api/swap/near/quote
+- /api/swap/near/orders
+- /api/rewards/me
+- /api/rewards/enroll
+- /api/swap/near/status
+- /api/v1/analytics_events
+- /api/v1/funding/coinbase_on_ramp/init
+- /api/v1/funding/coinbase_on_ramp/status
+- /api/v1/custom_jwt_account/authenticate
+- /api/v1/custom_jwt_account/link
+- /api/v1/farcaster/init
+- /api/v1/farcaster/authenticate
+- /api/v1/farcaster/link
+- /api/v1/farcaster/unlink
+- /api/v1/farcaster/status
+- /api/v2/farcaster/init
+- /api/v2/farcaster/authenticate
+- /api/v1/guest/authenticate
+- /api/v1/mfa/passkeys/init
+- /api/v1/mfa/passwordless_sms/init
+- /api/v1/oauth/authenticate
+- /api/v1/oauth/init
+- /api/v1/oauth/link
+- /api/v1/oauth/unlink
+- /api/v1/passkeys/link
+- /api/v1/passkeys/authenticate
+- /api/v1/passkeys/register
+- /api/v1/passkeys/authenticate/init
+- /api/v1/passkeys/register/init
+- /api/v1/passkeys/link/init
+- /api/v1/passwordless/authenticate
+- /api/v1/passwordless/init
+- /api/v1/passwordless/link
+- /api/v1/passwordless/unlink
+- /api/v1/passwordless/update
+- /api/v1/passwordless_sms/authenticate
+- /api/v1/passwordless_sms/init
+- /api/v1/passwordless_sms/link
+- /api/v1/passwordless_sms/unlink
+- /api/v1/passwordless_sms/update
+- /api/v1/recovery/oauth/init
+- /api/v1/recovery/oauth/authenticate
+- /api/v1/recovery/oauth/init_icloud
+- /api/v1/recovery/configuration_icloud
+- /api/v1/onramp/deposit_addresses/quote
+- /api/v1/onramp/deposit_addresses/deposit_config
+- /api/v1/deposit_accounts/crypto/config
+- /api/v1/deposit_accounts/crypto/quote
+- /api/v1/sessions
+- /api/v1/sessions/logout
+- /api/v1/siwe/init
+- /api/v1/siwe/authenticate
+- /api/v1/siwe/link
+- /api/v1/siwe/link_smart_wallet
+- /api/v1/siwe/unlink
+- /api/v1/siws/init
+- /api/v1/siws/authenticate
+- /api/v1/siws/link
+- /api/v1/siws/unlink
+- /api/v1/users/me/accept_terms
+- /api/v1/telegram/authenticate
+- /api/v1/telegram/link
+- /api/v1/telegram/unlink
+- /api/v1/plugins/moonpay_on_ramp/sign
+- /api/v1/onramp/stripe/create_link_auth_intent
+- /api/v1/onramp/stripe/exchange_tokens
+- /api/v1/onramp/stripe/customer
+- /api/v1/onramp/stripe/customer/wallets
+- /api/v1/onramp/stripe/customer/payment_tokens
+- /api/v1/onramp/stripe/create_onramp_session
+- /api/v1/onramp/stripe/transaction_limits
+- /api/v1/users/me
+- /api/v1/wallets
+- /api/v1/wallets/revoke
+- /api/v1/siwe/transfer
+- /api/v1/siws/transfer
+- /api/v1/farcaster/transfer
+- /api/v1/passwordless/transfer
+- /api/v1/passwordless_sms/transfer
+- /api/v1/oauth/transfer
+- /api/v1/telegram/transfer
+- /api/v1/scan/transaction
+- /api/v1/token_price
+- /api/v1/spl_token_info
+- /api/v1/farcaster/signer/status
+- /api/support/requests/status
+
+## Write calls seen (not replayable, need a real backend)
+- none
+
+## External hosts the site loads from (left as live links)
+- assets.geckoterminal.com
+- auth.privy.io
+- coin-images.coingecko.com
+- explorer-api.walletconnect.com
+- i.replit.com
+
+## Failed or missing
+- https://darkswap.app/assets/assets/AccountNotFoundScreen-dpvlPdBk-CDs5upai.js: HTTP 404
+- https://darkswap.app/assets/assets/_shortw_utils-GUcHs0a6.js: HTTP 404
+- https://darkswap.app/assets/assets/index-mjdRp7H7.js: HTTP 404
+- https://darkswap.app/assets/assets/parseSignature-CIecz8SQ.js: HTTP 404
+- https://darkswap.app/assets/assets/isPaymentRequestAvailable-Bq1cemEn-AYBnvxRJ.js: HTTP 404
+- https://darkswap.app/assets/assets/createLucideIcon-BAVHleuH.js: HTTP 404
+- https://darkswap.app/assets/assets/ModalFooter-BldNwiHO-BShE1wlp.js: HTTP 404
+- https://darkswap.app/assets/assets/GooglePay-B53WnudL-DKB--9Pa.js: HTTP 404
+- https://darkswap.app/assets/assets/AddFundsSelectionScreen-D252cdfE-65pKLyRT.js: HTTP 404
+- https://darkswap.app/assets/assets/index-CWARkn2w-CRi_aHEp.js: HTTP 404
+- https://darkswap.app/assets/assets/Screen-Dtn4lspb-CxTfiMab.js: HTTP 404
+- https://darkswap.app/assets/assets/ScreenLayout-XFsWudNK-BcghbP7F.js: HTTP 404
+- https://darkswap.app/assets/assets/AllowlistRejectionScreen-Dxn2QBch-BKtBCnut.js: HTTP 404
+- https://darkswap.app/assets/assets/external-link-JnlBMU5o.js: HTTP 404
+- https://darkswap.app/assets/assets/shouldProceedtoEmbeddedWalletCreationFlow-BxvaW_Vy-BbEXHKns.js: HTTP 404
+- https://darkswap.app/assets/assets/styles-BSL8-rdX-DcaouSpI.js: HTTP 404
+- https://darkswap.app/assets/assets/AffirmativeConsentScreen-CNKhHlgd-DQ_hy4sk.js: HTTP 404
+- https://darkswap.app/assets/assets/landmark-B2AuY3bn.js: HTTP 404
+- https://darkswap.app/assets/assets/wallet-lEIvawjP.js: HTTP 404
+- https://darkswap.app/assets/assets/styles-DVyDvTdj-D5gxcGpv.js: HTTP 404
+- https://darkswap.app/assets/assets/copy-DqLdZM2K.js: HTTP 404
+- https://darkswap.app/assets/assets/CopyableText-CQapvaMr-CYVDfifo.js: HTTP 404
+- https://darkswap.app/assets/assets/AuthenticateWithWalletScreen-XZW4H6Rp-DXxFVD2_.js: HTTP 404
+- https://darkswap.app/assets/assets/ConnectWalletView-BLywHxyt-BSA-udXZ.js: HTTP 404
+- https://darkswap.app/assets/assets/safe-url-D7SRPu33-A8zMgOTd.js: HTTP 404
+- https://darkswap.app/assets/assets/check-D5pOW5kA.js: HTTP 404
+- https://darkswap.app/assets/assets/Link-BdDilT2T-B37b-qzn.js: HTTP 404
+- https://darkswap.app/assets/assets/lock-CSjGSikB.js: HTTP 404
+- https://darkswap.app/assets/assets/EmailInputForm-Cqo1mda8-BAJpepNE.js: HTTP 404
+- https://darkswap.app/assets/assets/dijkstra-COg3n3zL.js: HTTP 404
+- https://darkswap.app/assets/assets/AwaitingEvmToSolBridgingScreen-kxYkefvS-Do1caAwN.js: HTTP 404
+- https://darkswap.app/assets/assets/WalletCards-DH1rqayz-B9RGmY3t.js: HTTP 404
+- https://darkswap.app/assets/assets/QrCode-cA9rnMIN-BzeS35Zr.js: HTTP 404
+- https://darkswap.app/assets/assets/ErrorMessage-D8VaAP5m-C1sqG-GT.js: HTTP 404
+- https://darkswap.app/assets/assets/browser-BFosCwBg.js: HTTP 404
+- https://darkswap.app/assets/assets/useI18n-DJGbXMkU-wFzQKIDk.js: HTTP 404
+- https://darkswap.app/assets/assets/Layouts-BMRfo5hw-C_CQCR7b.js: HTTP 404
+- https://darkswap.app/assets/assets/useGetTokenPrice-Ufl46eND-BWORcCJl.js: HTTP 404
+- https://darkswap.app/assets/assets/reservoir-x-nGuZkT-DdpB9ZLW.js: HTTP 404
+- https://darkswap.app/assets/assets/ScreenHeader-CHmc4-Lu-CdlFVglK.js: HTTP 404
+- https://darkswap.app/assets/assets/FundWalletMethodHeader-CBdY084Z-BXsBlkgh.js: HTTP 404
+- https://darkswap.app/assets/assets/analytics-mkkvFRju-DOXuftJB.js: HTTP 404
+- https://darkswap.app/assets/assets/useGetSolPrice-x7gfUIHJ-CiBtzygc.js: HTTP 404
+- https://darkswap.app/assets/assets/CheckCircleIcon-BZbjisBv.js: HTTP 404
+- https://darkswap.app/assets/assets/getFormattedUsdFromLamports-De3U9GlO-C446pzMl.js: HTTP 404
+- https://darkswap.app/assets/assets/transaction-BNTP-bFm-CrebgH-D.js: HTTP 404
+- https://darkswap.app/assets/assets/Subtitle-CV-2yKE4-D_bt0o_I.js: HTTP 404
+- https://darkswap.app/assets/assets/LoadingSkeleton-BMsgO5PV-DzKkEoas.js: HTTP 404
+- https://darkswap.app/assets/assets/getErc20Balance-jXNpFf0N-JgQvKjn9.js: HTTP 404
+- https://darkswap.app/assets/assets/BridgeNetworkSelectionView-Crnt5gup-Bw0oZv4N.js: HTTP 404
+- https://darkswap.app/assets/assets/getChainName-DjpPdUSc-c2urPd0g.js: HTTP 404
+- https://darkswap.app/assets/assets/Value-DTgR824E-KzRU4Euk.js: HTTP 404
+- https://darkswap.app/assets/assets/TransferOrBridgeLoadingScreen-BHVCJFXe-l3G8HuLX.js: HTTP 404
+- https://darkswap.app/assets/assets/Address-DMC9FYV2-BotdckVW.js: HTTP 404
+- https://darkswap.app/assets/assets/Title-BnzYV3Is-CtS12wM6.js: HTTP 404
+- https://darkswap.app/assets/assets/GlobeAltIcon-DLcqL-gF.js: HTTP 404
+- https://darkswap.app/assets/assets/WalletIcon-DKhkQr5g.js: HTTP 404
+- https://darkswap.app/assets/assets/shared-FM0rljBt-CgSXmTuF.js: HTTP 404
+- https://darkswap.app/assets/assets/Chip-CZKIKt9K-BgLrwOhV.js: HTTP 404
+- https://darkswap.app/assets/assets/InjectedWalletIcon-DLcYOGDj-CZoglq32.js: HTTP 404
+- https://darkswap.app/assets/assets/circle-check-big-CQeWf42i.js: HTTP 404
+- https://darkswap.app/assets/assets/styles-C4IROdYt-BYmmUeus.js: HTTP 404
+- https://darkswap.app/assets/assets/ChevronDownIcon-BXQV_EkO.js: HTTP 404
+- https://darkswap.app/assets/assets/TodoList-DnyULl18-CGI3ba8E.js: HTTP 404
+- https://darkswap.app/assets/assets/ethers-DNxEwCFm-CL-zZ6zC.js: HTTP 404
+- https://darkswap.app/assets/assets/formatErc20TokenAmount-BuPk9xcy-CkAr4Oc0.js: HTTP 404
+- https://darkswap.app/assets/assets/LinkPasskeyScreen-BjrBgk8F-fVer8Ilq.js: HTTP 404
+- https://darkswap.app/assets/assets/x-BLzT7hmA.js: HTTP 404
+- https://darkswap.app/assets/assets/AwaitingExternalEthereumTransferScreen-CRXTmg6K-DZFGR4ea.js: HTTP 404
+- https://darkswap.app/assets/assets/parseEther-BlJ-g-R5.js: HTTP 404
+- https://darkswap.app/assets/assets/floating-ui.react-dom-BriayXdK.js: HTTP 404
+- https://darkswap.app/assets/assets/floating-ui.react-DR_-f5g6.js: HTTP 404
+- https://darkswap.app/assets/assets/fingerprint-pattern-BMlq2cz6.js: HTTP 404
+- https://darkswap.app/assets/assets/EnvelopeIcon-BGfzJWJG.js: HTTP 404
+- https://darkswap.app/assets/assets/AwaitingPasswordlessCodeScreen-Y39Smn5S-BeLljUZj.js: HTTP 404
+- https://darkswap.app/assets/assets/transfer-6YztDh-t-DU6hH7CZ.js: HTTP 404
+- https://darkswap.app/assets/assets/ArrowsRightLeftIcon-C_FFXdu_.js: HTTP 404
+- https://darkswap.app/assets/assets/ConnectLedgerScreen-Cbl7rv9--BLVqFSlo.js: HTTP 404
+- https://darkswap.app/assets/assets/PhoneIcon-CKNzxoK3.js: HTTP 404
+- https://darkswap.app/assets/assets/CheckCircleIcon-DAhfx_CZ.js: HTTP 404
+- https://darkswap.app/assets/assets/circle-x-ouM6l0TK.js: HTTP 404
+- https://darkswap.app/assets/assets/AwaitingSolToEvmBridgingScreen-m93Tmzeb-BM3AAhbw.js: HTTP 404
+- https://darkswap.app/assets/assets/CaptchaScreen-CjA52GUM-DFLSF-jn.js: HTTP 404
+- https://darkswap.app/assets/assets/CoinbaseOnrampStatusScreen-MwBZBEO8-e6zJ--3G.js: HTTP 404
+- https://darkswap.app/assets/assets/ConnectOnlyLandingScreen-DRjLarbZ-CplqmJz5.js: HTTP 404
+- https://darkswap.app/assets/assets/ConnectOrCreateScreen-DRvyMrwl-B_er5Pff.js: HTTP 404
+- https://darkswap.app/assets/assets/mail-CbugydaS.js: HTTP 404
+- https://darkswap.app/assets/assets/ConnectOnlyStatusScreen-HQr2eWJ8-BkCeajq9.js: HTTP 404
+- https://darkswap.app/assets/assets/CustomLandingScreenView-BKG1b2JP-C0i5MiUP.js: HTTP 404
+- https://darkswap.app/assets/assets/farcaster-DPlSjvF5-BHYAT9bp.js: HTTP 404
+- https://darkswap.app/assets/assets/ConnectEmailForm-DZRoHv1b-DdhLOHZ9.js: HTTP 404
+- https://darkswap.app/assets/assets/ConnectionStatusScreen-CkSP8_A8-VAkXapat.js: HTTP 404
+- https://darkswap.app/assets/assets/CrossAppAuthScreen-CjEnrdrJ-AH1gfrQO.js: HTTP 404
+- https://darkswap.app/assets/assets/smartphone-DkVXTdt6.js: HTTP 404
+- https://darkswap.app/assets/assets/DelegatedActionsConsentScreen-CgjAuH1X-CirjvJ9v.js: HTTP 404
+- https://darkswap.app/assets/assets/FingerPrintIcon-BvR5wb9k.js: HTTP 404
+- https://darkswap.app/assets/assets/telegram-B-JqnkqZ-DOvFKsZi.js: HTTP 404
+- https://darkswap.app/assets/assets/ConnectPhoneForm-CSL588et-CgrkuTmu.js: HTTP 404
+- https://darkswap.app/assets/assets/WalletOverflowButton-BQB3rBwe-BPoiGRot.js: HTTP 404
+- https://darkswap.app/assets/assets/twitch-5IOe4sIQ-BNUIxo6Q.js: HTTP 404
+- https://darkswap.app/assets/assets/DelegatedActionsRevokeScreen-Ddfj8i91-C8exauRo.js: HTTP 404
+- https://darkswap.app/assets/assets/LabelXs-oqZNqbm_-CpcSrWWo.js: HTTP 404
+- https://darkswap.app/assets/assets/hourglass-pR_e7HSV.js: HTTP 404
+- https://darkswap.app/assets/assets/chevron-down-Ckz9Ttbu.js: HTTP 404
+- https://darkswap.app/assets/assets/circle-alert-_niDv8rH.js: HTTP 404
+- https://darkswap.app/assets/assets/DepositAddressAddressStepView-DEuzIXen-Du8bEPrL.js: HTTP 404
+- https://darkswap.app/assets/assets/WalletInfoCard-zmo6O2YN-D7ZlAy1X.js: HTTP 404
+- https://darkswap.app/assets/assets/DepositAddressScreen-DIaAeDcJ-B2TmAJAP.js: HTTP 404
+- https://darkswap.app/assets/assets/DepositAddressV3Screen-CrX8jlrq-cYhDGOyn.js: HTTP 404
+- https://darkswap.app/assets/assets/EmbeddedWalletKeyExportScreen-CkF-zPTJ-hT-ePy_D.js: HTTP 404
+- https://darkswap.app/assets/assets/EmbeddedWalletCreatedScreen-njjn_fWc-Di8Mi90r.js: HTTP 404
+- https://darkswap.app/assets/assets/EmbeddedWalletOnAccountCreateScreen-DVnOfOJg-D_-o6bmq.js: HTTP 404
+- https://darkswap.app/assets/assets/WarningBanner-ZZqCEtZK-_8yVnR8F.js: HTTP 404
+- https://darkswap.app/assets/assets/EmbeddedWalletConnectingScreen-DTxYtwkh-CujNlkgx.js: HTTP 404
+- https://darkswap.app/assets/assets/ExclamationTriangleIcon-CJdVzjxY.js: HTTP 404
+- https://darkswap.app/assets/assets/triangle-alert-B34Auvwk.js: HTTP 404
+- https://darkswap.app/assets/assets/ErrorScreen-CZXyXJwt-D70xLn_f.js: HTTP 404
+- https://darkswap.app/assets/assets/FarcasterConnectStatusScreen-C9sUwPj2-k5C1-1XW.js: HTTP 404
+- https://darkswap.app/assets/assets/RecoveryPasswordCreateScreen-BLH8kpZr-rdCmLles.js: HTTP 404
+- https://darkswap.app/assets/assets/SetWalletPasswordForm-mtF9E932-mibZJDIE.js: HTTP 404
+- https://darkswap.app/assets/assets/Checkbox-D1EDeo41-BZH1xqr4.js: HTTP 404
+- https://darkswap.app/assets/assets/EmbeddedWalletPasswordUpdateSplashScreen-B9SS2EuP-CJPMCB9M.js: HTTP 404
+- https://darkswap.app/assets/assets/shared-C4KM7VSO-DcBF7UP1.js: HTTP 404
+- https://darkswap.app/assets/assets/EmbeddedWalletPasswordUpdateScreen-Ce4369UE-95FdjWyC.js: HTTP 404
+- https://darkswap.app/assets/assets/FundSolWalletWithExternalSolanaWallet-DAgCcGSZ-CxjcPb6c.js: HTTP 404
+- https://darkswap.app/assets/assets/OpenLink-CUpJ1mOr-B9-Z_4Mo.js: HTTP 404
+- https://darkswap.app/assets/assets/InfoBanner-Cb3p1z12-COQZJhhc.js: HTTP 404
+- https://darkswap.app/assets/assets/CopyToClipboard-i_OQSBJr-CMET_cfH.js: HTTP 404
+- https://darkswap.app/assets/assets/FarcasterSignerStatusScreen-B67IDHNj-BZlrXwHb.js: HTTP 404
+- https://darkswap.app/assets/assets/SelectSourceAsset-BE6EzMW7-ByxwhKxo.js: HTTP 404
+- https://darkswap.app/assets/assets/getUsdcMintAddress-BVgm9GRo-FDalV59C.js: HTTP 404
+- https://darkswap.app/assets/assets/FiatOnrampScreen-mHppmT9g-CtuGSdkW.js: HTTP 404
+- https://darkswap.app/assets/assets/simulateTransaction-CP42l5SJ-B_LUZ0i0.js: HTTP 404
+- https://darkswap.app/assets/assets/FundingEditAmountScreen-Sl84OThy-w3kpySDc.js: HTTP 404
+- https://darkswap.app/assets/assets/ExclamationCircleIcon-5CR4MCMu.js: HTTP 404
+- https://darkswap.app/assets/assets/ErrorBanner-BcpGRt0h-DZCAl07n.js: HTTP 404
+- https://darkswap.app/assets/assets/getErc20TokenInfo-CgPHS-3o-DWhjTu12.js: HTTP 404
+- https://darkswap.app/assets/assets/FundingMethodSelectionScreen-C7QABfvW--ecVOOQj.js: HTTP 404
+- https://darkswap.app/assets/assets/FundWithBankDepositScreen-CPTWNJlt-CmRsaKm4.js: HTTP 404
+- https://darkswap.app/assets/assets/index-D8ngJizK-PEybUe3N.js: HTTP 404
+- https://darkswap.app/assets/assets/LinkPhoneScreen-CxzCokXL-C7OpWFUF.js: HTTP 404
+- https://darkswap.app/assets/assets/LinkEmailScreen-DBYu47Ce-CK2UaZ91.js: HTTP 404
+- https://darkswap.app/assets/assets/LandingScreen-DRUbwL_z-BzBpcG06.js: HTTP 404
+- https://darkswap.app/assets/assets/StackedContainer-B2vaEl56-D5k5M4UI.js: HTTP 404
+- https://darkswap.app/assets/assets/InAppBrowserLoginNotPossible-92qfsBpt-BR3x0rQ7.js: HTTP 404
+- https://darkswap.app/assets/assets/LinkConflictScreen-BIU8ewTv-DJOkDnIq.js: HTTP 404
+- https://darkswap.app/assets/assets/capitalizeFirstLetter-DmLYqXsO-tV1Idewc.js: HTTP 404
+- https://darkswap.app/assets/assets/InstallWalletScreen-Be7abwcn-BNNLeJlD.js: HTTP 404
+- https://darkswap.app/assets/assets/PinInput-DbZ0b1i1-D2GwrK6k.js: HTTP 404
+- https://darkswap.app/assets/assets/MfaAuthVerifyFlowScreen-Caf1mG_p-9TgInkL0.js: HTTP 404
+- https://darkswap.app/assets/assets/LoginFailedScreen-BogLDpQD-ByxXYLBo.js: HTTP 404
+- https://darkswap.app/assets/assets/useWalletBalance-CZnP5f_f-CPpWrFun.js: HTTP 404
+- https://darkswap.app/assets/assets/ShieldCheckIcon-CsxQr82V.js: HTTP 404
+- https://darkswap.app/assets/assets/EnrollTotp-9U-h-h7Y-DESx-n_f.js: HTTP 404
+- https://darkswap.app/assets/assets/MfaAuthEnrollmentFlowScreen-aQyc42kT-BSCnUWLb.js: HTTP 404
+- https://darkswap.app/assets/assets/ManualTransferScreen-D_NY_W-D-G0Rhd5G6.js: HTTP 404
+- https://darkswap.app/assets/assets/PasskeyStatusScreen-CPNqvDoG-Cx-DyBa5.js: HTTP 404
+- https://darkswap.app/assets/assets/MfaEnrollmentFlowScreen-CsCKhXOZ-ZNNXqcoS.js: HTTP 404
+- https://darkswap.app/assets/assets/TransactionDetails-BOeB1w20-BLX-GmI-.js: HTTP 404
+- https://darkswap.app/assets/assets/to-ui-error-DriSyvzX-Dk8k51dE.js: HTTP 404
+- https://darkswap.app/assets/assets/MoonpayStatusScreen-C_ioqmOe-BhGAl0l1.js: HTTP 404
+- https://darkswap.app/assets/assets/OAuthStatusScreen-CippSqIJ-CIWSLJxj.js: HTTP 404
+- https://darkswap.app/assets/assets/WalletLink-wyEl6U-t-B1ivO_OV.js: HTTP 404
+- https://darkswap.app/assets/assets/PasskeySelectSignupOrLogin-Bz4eA1kT-C0s5RvfF.js: HTTP 404
+- https://darkswap.app/assets/assets/styles-BsotlekN-BKrotsj5.js: HTTP 404
+- https://darkswap.app/assets/assets/LockClosedIcon-DGSZ5L77.js: HTTP 404
+- https://darkswap.app/assets/assets/index-DEvxmE29-BLWBQPsV.js: HTTP 404
+- https://darkswap.app/assets/assets/PasswordRecoveryScreen-BBadAC-E-B83xGTi5.js: HTTP 404
+- https://darkswap.app/assets/assets/JsonTree-BHzNC-ic-B4xq0IeY.js: HTTP 404
+- https://darkswap.app/assets/assets/RecoveryOAuthStatusScreen-x9acanvl-DDYYVjlw.js: HTTP 404
+- https://darkswap.app/assets/assets/RecoverySelectionScreen-B4zO4H6R-bWyDUdLj.js: HTTP 404
+- https://darkswap.app/assets/assets/TransactionErrorView-CHChscnJ-By-lwY5h.js: HTTP 404
+- https://darkswap.app/assets/assets/TransferFromWalletScreen-FPypY7tU-CdIz5OUl.js: HTTP 404
+- https://darkswap.app/assets/assets/UserLimitReachedScreen-cTdLG4Aq-DjpIhg3v.js: HTTP 404
+- https://darkswap.app/assets/assets/SetAutomaticRecoveryScreen-GtEwf97v-Xw0b-oMf.js: HTTP 404
+- https://darkswap.app/assets/assets/TelegramAuthScreen-BG263Fwa-Dz7dCL0-.js: HTTP 404
+- https://darkswap.app/assets/assets/SignRequestScreen-Chf6Z75H-lrhLW_cc.js: HTTP 404
+- https://darkswap.app/assets/assets/UpdatePhoneScreen-XtZryXw--CiA5M4-g.js: HTTP 404
+- https://darkswap.app/assets/assets/StandardSignAndSendTransactionScreen-BlF4_0ms-DR09iIHe.js: HTTP 404
+- https://darkswap.app/assets/assets/UpdateEmailScreen-D_Zhi8bE-kK0bzLYv.js: HTTP 404
+- https://darkswap.app/assets/assets/MfaVerifyFlowScreen-CH_lq1t9-4AfgPMkO.js: HTTP 404
+- https://darkswap.app/assets/assets/custom-B68kdqe8.js: HTTP 404
+- https://darkswap.app/assets/assets/pool-page-Bm3WSI0S.js: HTTP 404
+- https://darkswap.app/assets/assets/WalletInterstitialScreen-Bb1Dv0ks-D6YSRbiQ.js: HTTP 404
+- https://darkswap.app/assets/darkswap-privacy-route.png: HTTP 404
+- https://darkswap.app/assets/darkswap-privacy-route.svg: HTTP 404
+- https://darkswap.app/darkswap-privacy-route.svg: HTTP 404
+- https://darkswap.app/darkswap-privacy-route.png: HTTP 404
+- https://darkswap.app/assets/t: HTTP 404
+- https://darkswap.app/assets/llms.txt: HTTP 404
+- https://darkswap.app/api/support/requests: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/swap/near/quote: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/swap/quotes: HTTP 400 (probably a write-only endpoint)
+- https://darkswap.app/api/swap/tokens: HTTP 400 (probably a write-only endpoint)
+- https://darkswap.app/api/marketing/subscriptions: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/near/pools/search: HTTP 400 (probably a write-only endpoint)
+- https://darkswap.app/api/swap/orders: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/swap/near/tokens: HTTP 400 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/funding/coinbase_on_ramp/init: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/swap/near/orders: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/funding/coinbase_on_ramp/status: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/custom_jwt_account/authenticate: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/rewards/me: HTTP 401 (probably a write-only endpoint)
+- https://darkswap.app/api/rewards/enroll: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/analytics_events: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/swap/near/status: HTTP 400 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/farcaster/status: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/farcaster/authenticate: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/custom_jwt_account/link: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/farcaster/unlink: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/farcaster/init: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/farcaster/link: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v2/farcaster/authenticate: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v2/farcaster/init: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/oauth/authenticate: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/guest/authenticate: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/oauth/unlink: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/mfa/passkeys/init: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passkeys/link: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/oauth/link: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/mfa/passwordless_sms/init: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/oauth/init: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passkeys/authenticate: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passkeys/register: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passwordless/init: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passkeys/link/init: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passwordless/authenticate: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passkeys/authenticate/init: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passwordless/link: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passkeys/register/init: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passwordless_sms/update: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passwordless_sms/unlink: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/recovery/oauth/init: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passwordless/unlink: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passwordless_sms/link: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passwordless/update: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passwordless_sms/init: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passwordless_sms/authenticate: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/sessions: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/deposit_accounts/crypto/quote: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/deposit_accounts/crypto/config: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/onramp/deposit_addresses/deposit_config: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/onramp/deposit_addresses/quote: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/recovery/configuration_icloud: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/recovery/oauth/authenticate: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/recovery/oauth/init_icloud: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/siws/init: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/siwe/unlink: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/siws/authenticate: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/siwe/link_smart_wallet: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/siwe/authenticate: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/siwe/link: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/sessions/logout: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/siwe/init: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/telegram/unlink: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/plugins/moonpay_on_ramp/sign: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/users/me/accept_terms: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/telegram/authenticate: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/siws/link: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/telegram/link: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/siws/unlink: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/onramp/stripe/create_link_auth_intent: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/users/me: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/onramp/stripe/exchange_tokens: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/wallets: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/onramp/stripe/customer: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/onramp/stripe/customer/wallets: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/onramp/stripe/create_onramp_session: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/onramp/stripe/customer/payment_tokens: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/onramp/stripe/transaction_limits: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/wallets/revoke: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/siws/transfer: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passwordless/transfer: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/oauth/transfer: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/passwordless_sms/transfer: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/telegram/transfer: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/farcaster/transfer: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/siwe/transfer: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/farcaster/signer/status: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/spl_token_info: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/support/requests/status: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/token_price: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/api/v1/scan/transaction: HTTP 404 (probably a write-only endpoint)
+- https://darkswap.app/assets/assets/ccip-B6lMzKoy.js: HTTP 404
+- https://darkswap.app/assets/assets/index-C1DpNrdH.js: HTTP 404
+- https://darkswap.app/assets/assets/index-CtoBo6pe.css: HTTP 404
+- https://darkswap.app/assets/assets/index-aSGncSeR.js: HTTP 404
+- https://darkswap.app/assets/assets/features-CUfgJ6Lt.js: HTTP 404
+- https://darkswap.app/assets/assets/basic-DF3EL6PR.js: HTTP 404
+- https://darkswap.app/assets/assets/secp256k1-BiqHm-ha.js: HTTP 404
+- https://darkswap.app/assets/assets/w3m-modal-15ahKpLL.js: HTTP 404
+- https://darkswap.app/assets/assets/index-BZl4h8yC.js: HTTP 404
+- https://darkswap.app/stripe.js: HTTP 404
+- https://darkswap.app/assets/assets/PhArrowRight-BI-V03Xf.js: HTTP 404
+- https://darkswap.app/assets/assets/PhArrowSquareOut-DnQ7n_B4.js: HTTP 404
+- https://darkswap.app/assets/assets/property-CnFDNXw5.js: HTTP 404
+- https://darkswap.app/assets/assets/PhArrowLeft-C0jlxVhM.js: HTTP 404
+- https://darkswap.app/assets/assets/PhArrowDown-CkoOD89h.js: HTTP 404
+- https://darkswap.app/assets/assets/PhArrowsDownUp-PZosTqZG.js: HTTP 404
+- https://darkswap.app/assets/assets/PhArrowClockwise-mOiWYLMV.js: HTTP 404
+- https://darkswap.app/assets/assets/PhArrowCircleDown-BtlNV0TZ.js: HTTP 404
+- https://darkswap.app/assets/assets/PhBank-hhPAIPVb.js: HTTP 404
+- https://darkswap.app/assets/assets/PhArrowsLeftRight-CYsRQ2qh.js: HTTP 404
+- https://darkswap.app/assets/assets/PhArrowUpRight-Bn-JhHsY.js: HTTP 404
+- https://darkswap.app/assets/assets/PhArrowUp-izKvURUW.js: HTTP 404
+- https://darkswap.app/assets/assets/PhCaretDown-ddSjwcwm.js: HTTP 404
+- https://darkswap.app/assets/assets/PhArrowsClockwise-Brtx2Re-.js: HTTP 404
+- https://darkswap.app/assets/assets/PhCaretLeft-B7YLoNEF.js: HTTP 404
+- https://darkswap.app/assets/assets/PhBrowser-BjzAmrHO.js: HTTP 404
+- https://darkswap.app/assets/assets/PhCopy-rgttky8E.js: HTTP 404
+- https://darkswap.app/assets/assets/PhClock-Sj17weCB.js: HTTP 404
+- https://darkswap.app/assets/assets/PhCompass-Df1ugFO-.js: HTTP 404
+- https://darkswap.app/assets/assets/PhCaretRight-BY8D5MIg.js: HTTP 404
+- https://darkswap.app/assets/assets/PhCaretUp-BG10nSut.js: HTTP 404
+- https://darkswap.app/assets/assets/PhCircleHalf-Bk9C4DvT.js: HTTP 404
+- https://darkswap.app/assets/assets/PhCreditCard-CZpdid2n.js: HTTP 404
+- https://darkswap.app/assets/assets/PhCheck-DrKd7pBC.js: HTTP 404
+- https://darkswap.app/assets/assets/PhDesktop-BuCDXYJj.js: HTTP 404
+- https://darkswap.app/assets/assets/PhFunnelSimple-DKx35ITq.js: HTTP 404
+- https://darkswap.app/assets/assets/PhCurrencyDollar-B6IKKjue.js: HTTP 404
+- https://darkswap.app/assets/assets/PhEnvelope-SmaNeXoQ.js: HTTP 404
+- https://darkswap.app/assets/assets/PhGlobe-q1mqj65V.js: HTTP 404
+- https://darkswap.app/assets/assets/PhDeviceMobile-CnybhXY-.js: HTTP 404
+- https://darkswap.app/assets/assets/PhDotsThree-CSAEcba1.js: HTTP 404
+- https://darkswap.app/assets/assets/PhVault-B8m1usHw.js: HTTP 404
+- https://darkswap.app/assets/assets/PhPlus-CBvZvLax.js: HTTP 404
+- https://darkswap.app/assets/assets/PhMagnifyingGlass-B6D0sWFL.js: HTTP 404
+- https://darkswap.app/assets/assets/PhPaperPlaneRight-Dvo-nXr9.js: HTTP 404
+- https://darkswap.app/assets/assets/PhPower-D8-AcNM6.js: HTTP 404
+- https://darkswap.app/assets/assets/PhLightbulb-DMZJsowR.js: HTTP 404
+- https://darkswap.app/assets/assets/PhImage-BYrKfN9k.js: HTTP 404
+- https://darkswap.app/assets/assets/PhInfo-X33f06Ej.js: HTTP 404
+- https://darkswap.app/assets/assets/PhIdentificationCard-BeLXJpfZ.js: HTTP 404
+- https://darkswap.app/assets/assets/PhTrash-BamrmMsN.js: HTTP 404
+- https://darkswap.app/assets/assets/PhQuestionMark-W55Txvvb.js: HTTP 404
+- https://darkswap.app/assets/assets/PhSealCheck-BeVLq9PH.js: HTTP 404
+- https://darkswap.app/assets/assets/PhSpinner-CZMtAFdX.js: HTTP 404
+- https://darkswap.app/assets/assets/PhSignOut-Cq2PivQ6.js: HTTP 404
+- https://darkswap.app/assets/assets/PhQuestion-rUoqC2sC.js: HTTP 404
+- https://darkswap.app/assets/assets/PhQrCode-uIXlI5ER.js: HTTP 404
+- https://darkswap.app/assets/assets/PhPuzzlePiece-C-7mYqGO.js: HTTP 404
+- https://darkswap.app/assets/assets/PhX-C3b4cCEy.js: HTTP 404
+- https://darkswap.app/assets/assets/PhUser-A2fxqIV0.js: HTTP 404
+- https://darkswap.app/assets/assets/PhWarning-CpkID9oi.js: HTTP 404
+- https://darkswap.app/assets/assets/PhWarningCircle-Cm58gXb9.js: HTTP 404
+- https://darkswap.app/assets/path/to/image.jpg: HTTP 404
